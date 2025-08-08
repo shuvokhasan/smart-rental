@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile / SmartRental</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-[#555879] text-white px-6  flex justify-between items-center">
+    <!-- Left: Logo Text -->
+    <div class="text-xl font-bold">SmartRental</div>
+
+    <!-- Right: Avatar Button with Card -->
+    <div class="relative">
+      <!-- Button -->
+      <button id="avatarButton" class="py-2 cursor-pointer focus:outline-none">
+        <img
+          src="imgs/profile.png"
+          alt="User Avatar"
+          class="w-10 h-10 rounded-full border-2 border-white"
+        />
+      </button>
+
+      <!-- Dropdown Card -->
+      <div
+        id="dropdownCard"
+        class="hidden absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-xl shadow-xl overflow-hidden transition-all duration-300"
+      >
+        <a href="profile.html" class="block px-4 py-3 hover:bg-gray-100 border-b">Profile</a>
+        <a href="login.html" class="block px-4 py-3 hover:bg-gray-100">Login</a>
+        <hr>
+        <a href="logout.html" class="block px-4 py-3 hover:bg-gray-100">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- JavaScript to toggle card -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / SmartRental</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-[#555879] text-white px-6  flex justify-between items-center">
+    <!-- Left: Logo Text -->
+    <div class="text-xl font-bold"><a href="index.html">SmartRental</a></div>
+
+    <!-- Right: Avatar Button with Card -->
+    <div class="relative">
+      <!-- Button -->
+      <button id="avatarButton" class="py-2 cursor-pointer focus:outline-none">
+        <img
+          src="imgs/profile.png"
+          alt="User Avatar"
+          class="w-10 h-10 rounded-full border-2 border-white"
+        />
+      </button>
+
+      <!-- Dropdown Card -->
+      <div
+        id="dropdownCard"
+        class="hidden absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-xl shadow-xl overflow-hidden transition-all duration-300"
+      >
+        <a href="profile.html" class="block px-4 py-3 hover:bg-gray-100 border-b">Profile</a>
+        <a href="login.html" class="block px-4 py-3 hover:bg-gray-100">Login</a>
+        <hr>
+        <a href="register.html" class="block px-4 py-3 hover:bg-gray-100">Register</a>
+      </div>
+    </div>
+  </nav>
+
+<main>
+<!-- Form Container -->
+<div class="flex items-center justify-center">
+  <div class="bg-white shadow-xl rounded-lg p-8 mt-10 w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+
+    <form action="#" method="POST" class="space-y-5">
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button
+          type="submit"
+          class="mt-4 w-full bg-indigo-600 text-white font-semibold py-2 rounded-md hover:bg-indigo-700 transition duration-200"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+</main>
+
+  <!-- JavaScript to toggle card -->
+  <script src="app.js"></script>
+</body>
+</html>

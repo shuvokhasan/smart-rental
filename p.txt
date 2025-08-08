@@ -1,0 +1,9 @@
+Create me a responsive navbar
+- right side: a circular image button. Onclick on the button: expand a card with two links(1. Profile, 2. Logout)
+- left side: logo-text(SmartRental)
+- navbar color: '#898AC4'
+
+
+Create a responsive div containing a form. Layout:
+- form contains two inputs(email, password)
+- submit button
